@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0px;
-    font-family: 'roboto';
+    font-family: 'Roboto', sans-serif;
     // background-color: rgb(182, 182, 182);
 }
 
@@ -140,8 +143,9 @@ body {
 }
 
 .countdown-container {
-    font-family: Montserrat, sans-serif;
+    font-family: Roboto, sans-serif;
     -webkit-font-smoothing: antialiased;
+    font-weight: 300;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -306,6 +310,7 @@ body {
 @media screen and (min-width: 320px) and (max-width: 768px) {
 
     .hero-banner {
+        background-image: url("/img/mobile-frame.png");
 
         .hero-text-container {
             padding-top: 100px;
@@ -328,7 +333,7 @@ body {
                 }
 
                 h4 {
-                    margin-top: 57px;
+                    margin-top: 40px;
                     font-size: 3rem;
                     text-transform: uppercase;
                     font-weight: lighter;
@@ -350,13 +355,14 @@ body {
     #js-hours:after,
     #js-minutes:after,
     #js-seconds:after {
-        content: "DAYS";
+        // content: "DAYS";
         position: absolute;
         text-align: center;
         left: 0;
         right: 0;
-        bottom: -80px;
-        font-size: 25px;
+        bottom: -50px;
+        font-size: 1rem;
+        font-weight: 400;
     }
 
     .socialbtns,
@@ -372,6 +378,23 @@ body {
         top: 83%;
     }
 
+
+    .countdown {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .navbar{
+    //     .navbar-toggler{
+
+    //     }
+    // }
+    .collapse.show {
+        background-color: #039FA8;
+        border-radius: 5px;
+        padding: 10px 0px;
+        transition: 0.3s all;
+    }
 
 
 
